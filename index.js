@@ -197,3 +197,72 @@ if (a == 8) {
 } else {
     document.write("Tout le monde a faux. <br>");
 }
+
+//ELSE IF permet d'jouter des cas supplémentaire à une condition IF
+//Si un est des cas est vérifié, tout les cas suivant ne sont pas évalués
+
+
+
+let voiture = "BM";
+
+document.write("<h4>Condition SWITCH</h4>");
+
+let perso = "MARIO";
+
+switch (perso) {
+    case"luigi":
+    document.write("Vous avez choisi "+perso+ "<br>");
+    break;
+    case "TOAD":
+        document.write("Vous avez choisi "+perso+ "<br>");
+        break;
+        case "BOWSER":
+            document.write("Vous avez choisi "+perso+ "<br>");
+            break;
+            default:
+                document.write("Vous etes fou c'est "+perso+ " le meilleur"+"<br>");
+}
+
+//Exo : pourriez vous faire la même chose avec les conditions if / esle if / else
+
+if (perso == "LUIGI") {
+    document.write("Vous avez choisi "+perso+ "<br>");
+} else if (perso== "TOAD") {
+    document.write("Vous avez choisi "+perso+ "<br>");
+} else if (perso=="BOWSER") {
+    document.write("Vous avez choisi "+perso+ "<br>");
+} else {
+    document.write("Vous etes fou c'est "+perso+" le meilleur"+ "<br>");
+}
+
+document.write("<h4>Les boucles</h4>");
+//Initialisation / condition / incrementation
+for (let i = 0; i<=5; i++) {
+    document.write(i + "---" ) 
+    // instruction pour chaque tour de boucle
+}
+document.write("<br>")
+
+for (let u = 0; u<= 9; u++) {
+    document.write(u + "---")
+    console.log(u)
+}
+
+document.write('<table border="1"><tr>');
+for(let l =0; l<= 9; l++) {
+    document.write("<td>" + l + "</td>")
+}
+document.write("</table>");
+
+let compteur = 0
+
+document.write('<hr><table border= "1">');
+for (let ligne =0; ligne<=9; ligne ++) {
+    document.write("<tr>");
+    for (let cellule =0; cellule<= 9; cellule++) {
+    document.write("<td>"+ compteur + "</td>");
+    compteur++;
+    }
+    document.write("</tr>");
+}
+document.write('</table>');
